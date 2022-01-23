@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mymlapp
+  name: deployment
   labels:
     app: web
 spec:
@@ -13,9 +13,4 @@ spec:
     metadata:
       labels:
         app: web
-    spec:
-      containers:
-        - name: predictor
-          image: themeansquare/mymlapp
-          ports:
-            - containerPort: 80
+    
