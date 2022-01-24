@@ -1,12 +1,5 @@
 apiVersion: apps/v1
-network:
-  forwarded_ports:
-    - 8080/tcp
 kind: Deployment
-entrypoint: gunicorn -b :$PORT -b :8080 main:app
-ports:
-    - name: http1
-      containerPort: 8080
 metadata:
   name: mymlapp
   labels:
@@ -20,3 +13,5 @@ spec:
     metadata:
       labels:
         app: web
+  
+     
