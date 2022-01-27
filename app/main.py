@@ -22,5 +22,5 @@ def predict(data: MyData):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="127.0.0.1", port=8069)
+    uvicorn.run(app, host="10.0.2.2", port=8080)
     
